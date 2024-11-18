@@ -41,9 +41,9 @@
         async function fetchPrice() {
             try {
                 // Appel à l'API KuCoin pour le prix du LYX
-                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=lukso&vs_currencies=usd');
+                const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.kucoin.com/api/v1/market/orderbook/level1?symbol=LYX-USDT');
                 const data = await response.json();
-                const price = data.lukso.usd;
+                
 
                 const data = await response.json();
                 
